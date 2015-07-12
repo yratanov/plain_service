@@ -1,4 +1,4 @@
-# PlainService
+# PlainService ![build status](https://travis-ci.org/yratanov/plain_service.svg)
 
 ## Installation
 
