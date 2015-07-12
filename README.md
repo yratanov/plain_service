@@ -28,7 +28,7 @@ Example (simple password change service):
   # app/services/user_service/change_password
   
   module UserService
-    class ChangePassword
+    class ChangePassword < PlainService::Base
       attribute :user  
       attribute :password  
       attribute :password_confirmation
