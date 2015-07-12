@@ -1,7 +1,5 @@
 # PlainService
 
-TODO: Write a gem description
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -56,12 +54,13 @@ Example (simple password change service):
     if change_password.perform
       render #good response
     else
-      render #bad response, see change_password.error to get standard rails Errors object
+      render #bad response, see change_password.errors to get standard rails Errors object
     end
   end
   ```
 
 Advantages of such approach: 
+
 1. Simple and readable controller code. All action-related logic will be in service object.
 2. Validations that are related with specific action also hidden in service to keep model clean and easy to use.
 3. Easy to test. No callback hell, just plain ruby object.
