@@ -26,7 +26,8 @@ Example (simple password change service):
   
   ```ruby
   # app/services/user_service/change_password
-  
+  require 'plain_service/base'
+
   module UserService
     class ChangePassword < PlainService::Base
       attribute :user  
